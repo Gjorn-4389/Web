@@ -5,7 +5,6 @@
 
 
 1. vscode
-
     > Auto Rename Tag
     >
     > Bracket Pair Colorizer 2
@@ -25,6 +24,7 @@
 3. zeal 文档
 
 
+基础
 
 1. HTML+CSS
 2. JavaScript
@@ -34,7 +34,7 @@
 6. jquery
 7. ajax
 
-
+进阶
 
 1. Node.js
 2. MongoDB
@@ -49,6 +49,7 @@
 11. TypeScript
 
 
+框架
 
 1. React
 2. Vue.js
