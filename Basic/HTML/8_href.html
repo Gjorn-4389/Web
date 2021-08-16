@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接</title>
+</head>
+<body>
+
+    <!-- 超链接中可以嵌套除它以外的任何元素 -->
+    <a href="https://www.baidu.com">指向百度的超链接</a>
+    <br/>
+
+    <!-- href 可以指向本地文件, 相对路径是当前文件夹开始 -->
+    <a href="7_list.html">指向本地文件的超链接</a>
+    <br/>
+
+    <!-- href 可以指向 标签的id, 实现页内跳跃 -->
+    <a href="#bottom">跳到底部</a>
+    <br/>
+
+    <!-- target: Where to display the linked URL
+            _self: the current browsing context. (Default)
+            _blank: usually a new tab, 
+                but users can configure browsers to open a new window instead.
+    -->
+    <a href="https://www.baidu.com" target="_self">此页跳转</a>
+    <br/>
+    <a href="https://www.baidu.com" target="_blank">空白页跳转</a>
+    <br/>
+
+
+    <!-- 开发中超链接的 空占位 -->
+    <a href="javascript:void(0):;">指向空的超连接</a>
+    <br/>
+    
+    <!-- 实际上会自动补全 当前网站的路径 在最后添加# -->
+    <!-- 本例: file://~~~/1_introduce/8_ahref.html# -->
+    <a id="bottom" href="#">href为#，回到顶部</a>
+
+</body>
+</html>

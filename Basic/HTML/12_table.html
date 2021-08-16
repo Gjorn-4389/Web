@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+
+    <style>
+        table {
+            border: 1px black solid;
+            width: 50%;
+            margin: auto;
+
+            /* 边框距离 */
+            /* border-spacing: 2px; */
+
+            /* 合并边框 */
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px black solid;
+        }
+
+        thead > tr:first-child {
+            background-color: #bfa;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: red;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: blue;
+        }
+
+        td {
+            border: 1px black solid;
+            height: 100px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- 行 -->
+        <tr>
+            <!-- 列 -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C2</td>
+            <td>D3</td>
+        </tr>
+
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td rowspan="2">D2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td colspan="2">C4</td>
+        </tr>
+    </table>
+
+    <br/>
+
+    <table>
+        <thead>
+            <td>日期</td>
+            <td>收入</td>
+            <td>支出</td>
+            <td>合计</td>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>日期1</td>
+                <td>收入1</td>
+                <td>支出1</td>
+                <td>合计1</td>
+            </tr>
+            <tr>
+                <td>日期2</td>
+                <td>收入2</td>
+                <td>支出2</td>
+                <td>合计2</td>
+            </tr>
+            <tr>
+                <td>日期3</td>
+                <td>收入3</td>
+                <td>支出3</td>
+                <td>合计3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td></td>
+            <td></td>
+            <td>合计</td>
+            <td>合计总</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>

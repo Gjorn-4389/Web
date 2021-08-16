@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+
+    <style>
+
+        /* 选择器列表, 使用 `,` 连接选择器 */
+        h1, h2 {
+            color: red;
+        }
+
+        /* 交集选择器, 选择器直接相连 */
+        /* p.red {
+            color: red;
+        } */
+
+        p[class="green"] {
+            color: green;
+        }
+
+        /* 后代选择器, 使用 `\space` 连接选择器 */
+        div span {
+            color: pink;
+        }
+
+        /* 子选择器，使用 `>` 连接选择器 */
+        div > span {
+            color: purple;
+        }
+        
+        /* 通用兄弟选择器，使用 `~` 连接选择器 */
+        #li2 ~ li {
+            color: blue;
+        }
+
+        /* 相邻兄弟选择器，使用 `+` 连接选择器 */
+        #li2 + li {
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>选择器列表</h1>
+    <h2>选择器列表</h2>
+
+    <p class="green">交集选择器</p>
+
+    <div>
+        <p>
+            <span>`div span`: div元素中的p元素中的span元素</span>
+        </p>
+        <span>`div > span`: div元素中的span元素</span>
+    </div>
+
+
+    <ul>
+        <li>元素1</li>
+        <li id="li2">元素2</li>
+        <li>元素3</li>
+        <li>元素4</li>
+    </ul>
+
+</body>
+</html>

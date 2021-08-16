@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器权重</title>
+
+    <style>
+
+        #pTag {
+            color:red;
+        }
+
+        .pClass {
+            color:green;
+        }
+
+        p {
+            color:yellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <p id="pTag" class="pClass" style="color:blue;">
+    <!-- <p id="pTag" class="pClass"> -->
+        1 蓝色-内联样式<br>
+        2 红色-id选择器<br>
+        3 绿色-类选择器<br>
+        4 黄色-元素选择器
+    </p>
+</body>
+
+</html>

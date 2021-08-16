@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+
+    <style>
+
+        /* 伪类: 不存在的类，描述一个元素的特殊状态 */
+        /* ul > li:first-child {
+            color: pink;
+        } */
+
+        /* ul > li:nth-child(n) {
+            color: red;
+        } */
+
+        /* ul > li:nth-child(2n) {
+            color: red;
+        }
+        ul > li:nth-child(2n+1) {
+            color: blue;
+        } */
+
+        /* ul > li:nth-child(even) {
+            color: red;
+        }
+        ul > li:nth-child(odd) {
+            color: blue;
+        } */
+
+        /* ul > li:first-of-type {
+            color: pink;
+        } */
+
+        /* 除了id为li3的所有ul下的li元素 */
+        ul > li:not(#li3) {
+            color: saddlebrown;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            font-size: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <ul>
+        <span>span</span>
+        <li>li1</li>
+        <li>li2</li>
+        <li id="li3">li3</li>
+        <li>li4</li>
+        <li>li5</li>
+    </ul>
+
+    
+    <a href="javascript:void(0):;">空链接，当作未访问</a>
+    <br>
+    <a href="https://www.baidu.com">正常的链接</a>
+    <br>
+    <a href="https://www.baidu123.com">未访问的链接</a>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+
+<body>
+    <!-- action是提交表单的地址 -->
+    <form action="./10_iframe.html">
+        <!-- 文本框 -->
+        <!-- 数据要提交到服务器，必须为元素指定一个name -->
+        用户名：<input type="text" name="useename">
+        <br/>
+
+        <!-- 密码 -->
+        密码：<input type="password">
+        <br/>
+
+        <!-- 单选框 -->
+        <!-- checked: 默认选中 -->
+        性别：
+        <input type="radio" name="select" value="man" checked>
+        <input type="radio" name="select" value="woman">
+        <br/>
+
+        <!-- 多选框 -->
+        <input type="checkbox" name="hobby">
+        <input type="checkbox" name="hobby">
+        <input type="checkbox" name="hobby">
+        <br/>
+
+        <!-- 下拉列表 -->
+        <select name="project">
+            <option value="Mathematics">Mathematics</option>
+            <option selected value="Chinese">Chinese</option>
+            <option value="English">English</option>
+        </select>
+        <br/>
+
+        <!-- 提交 -->
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

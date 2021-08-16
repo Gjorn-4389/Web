@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 600px;
+            height: 600px;
+            background-color: silver;
+            overflow: hidden;
+        }
+
+        .box1 div {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+
+        .box2 {
+            background-color: #bfa;
+
+            transition-property: all;
+            transition-duration: 2s;
+            /* 过渡的时序函数 */
+            /* transition-timing-function: cubic-bezier(.4,.06,.91,.53); */
+            transition-timing-function: steps(2, end);
+        }
+
+        .box3 {
+            background-color: orange;
+
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        .box1:hover div {
+            margin-left: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

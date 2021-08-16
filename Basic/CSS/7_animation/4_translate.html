@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变形-平移</title>
+
+    <style>
+        html {
+            perspective: 800px;
+        }
+
+        body {
+            border: 1px red solid;
+            background-color: silver;
+        }
+
+        .ball {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-top: 200px;
+
+            transition: 1s;
+        }
+
+        body:hover .ball {
+            transform: translateZ(100px);
+        }
+
+        .box {
+            background-color: orange;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="ball"></div>
+
+    <div class="box">abc</div>
+</body>
+</html>

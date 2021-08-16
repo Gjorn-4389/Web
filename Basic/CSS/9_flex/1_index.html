@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 800px;
+            border: 5px red solid;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+
+            /* float会导致高度塌陷 */
+            /* float: left; */
+
+            flex-grow: 1;
+        }
+
+        li:nth-child(2) {
+            background-color: pink;
+        }
+
+        li:nth-child(3) {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+</body>
+</html>

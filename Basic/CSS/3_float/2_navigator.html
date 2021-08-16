@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条</title>
+
+    <style>
+        .nav {
+            width: 1210px;
+            height: 48px;
+            background-color: #E8E7E3;
+
+            margin: 100px auto;
+            padding: 0px;
+        }
+
+        .nav li {
+            /* 取消markker */
+            list-style-type: none;
+            /* 横向排列 */
+            float: left;
+            /* 垂直居中 */
+            /* height: 48px; */
+            line-height: 48px;
+        }
+
+        .nav a {
+            /* 转换为块元素 */
+            display: block;
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 修改颜色 */
+            color: #777;
+            /* 更改字体大小 */
+            font-size: 18px;
+            /* 设置内边距 */
+            padding: 0 39px;
+        }
+
+        /* 鼠标移入效果 */
+        .nav a:hover {
+            background-color: #3F3F3F;
+            color: #E8E7E3;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <ul class="nav">
+        <li>
+            <a href="1">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="2">Browser Side</a>
+        </li>
+        <li>
+            <a href="3">Server Side</a>
+        </li>
+        <li>
+            <a href="4">Programming</a>
+        </li>
+        <li>
+            <a href="5">XML</a>
+        </li>
+        <li>
+            <a href="5">Web Building</a>
+        </li>
+        <li>
+            <a href="5">Reference</a>
+        </li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体文件</title>
+</head>
+
+<body>
+    <!-- 
+        controls:   允许用户控制, 默认不允许
+        autoplay:   自动播放
+        loop:       循环播放
+    -->
+    <!-- <audio src="./media/LiSA (织部里沙) - 紅蓮華.mp3" controls></audio> -->
+
+    <!-- 
+        对于不支持audio功能的浏览器显示文字
+        对于不支持的格式使用其他格式的内容
+    -->
+    <audio controls>
+        <source src="./media/LiSA (织部里沙) - 紅蓮華.ogg">
+        <source src="./media/LiSA (织部里沙) - 紅蓮華.mp3">
+        对不起，您的浏览器不支持播放音频！请升级浏览器！
+    </audio>
+    <br/>
+
+
+    <!-- 指向某一个视频 -->
+    <video controls>
+        <source src="https://www.bilibili.com/video/BV1XJ411X7Ud?p=27&share_source=copy_web">
+    </video>
+    <br/>
+
+    <iframe src="//player.bilibili.com/player.html?aid=77217003&bvid=BV1XJ411X7Ud&cid=132019904&page=27" scrolling="no"
+        border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100">一个视频</iframe>
+</body>
+
+</html>
